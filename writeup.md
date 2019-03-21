@@ -24,10 +24,10 @@ My pipeline is made up of 9 steps.
     rho = 1, theta = 1 (converted to radians), threshold = 30, min_line_length = 20, max_line_gap = 10
 7. I then pass the resulting lines from the Hough transform to the draw_lines() method, which filters and averages those lines to create a single estimate of each lane line.
 8. To get a single estimate for each lane line, I made the following changes to draw_lines():
-    a. I put all lines with a slope greater than 0.5 and on the left side of the image into one list. This list contains all my estimates of the left lane.
-    b. I put all lines with a slope less than -0.5 and on the right side of the image into another list. This list contains all my estimates of the right lane.
-    c. I then average each list of lines to get a single estimate for the left and right lane.
-    d. I then extend each of those estimates so they run from halfway down the image to the bottom of the image.
+    1. I put all lines with a slope greater than 0.5 and on the left side of the image into one list. This list contains all my estimates of the left lane.
+    2. I put all lines with a slope less than -0.5 and on the right side of the image into another list. This list contains all my estimates of the right lane.
+    3. I then average each list of lines to get a single estimate for the left and right lane.
+    4. I then extend each of those estimates so they run from halfway down the image to the bottom of the image.
 9. I then use weighted_img() function to draw the estimates onto the input image.
     
 
