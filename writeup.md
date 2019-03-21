@@ -16,6 +16,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./test_images_output/solidWhiteRight.jpg "Example Output image"
+[gif1]: ./test_videos_output/challenge.gif "Challenge Video"
 [image2]: ./test_images_output/curvy_road.jpg "Curved Road"
 
 ---
@@ -49,9 +50,7 @@ My pipeline is made up of 9 steps.
 
 One potential shortcoming of this approach is its poor generalization to different lighting conditions. This can be seen in the challenge video, when the road goes into shadow and the asphalt surface changes. 
 
-<video width="960" height="540" controls>
-  <source src="./test_videos_output/challenge.mp4" type="video/mp4">
-</video>
+![alt text][gif1]
 
 As you can see in the video, the lane estimates, especially the left one, fail to deal with the change. 
 
